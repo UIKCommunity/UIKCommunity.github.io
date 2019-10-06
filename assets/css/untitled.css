@@ -10,3 +10,10 @@ header.masthead {
   /*background-size: cover;*/
 }
 
+.devfest {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+

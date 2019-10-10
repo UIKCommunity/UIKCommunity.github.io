@@ -1,4 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,7 +87,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -15,15 +105,20 @@ body {
     line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -34,19 +129,26 @@ table {
 }
 
 :root {
-    --dark-blue: #232435; --darker-blue: #181F2B; --dark-pink:#D61E3C; --white: #FFFFFF; --black: #000000; --light: #E0E0E0; --dark: #212121; }
+    --dark-blue: #232435;
+    --darker-blue: #181F2B;
+    --dark-pink: #D61E3C;
+    --white: #FFFFFF;
+    --black: #000000;
+    --light: #E0E0E0;
+    --dark: #212121;
+}
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    background: var(--light); 
-    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.25); 
+    background: var(--light);
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.25);
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 7px;
     background: var(--darker-blue);
     cursor: pointer !important
 }
@@ -175,9 +277,9 @@ header .nav-bar ul li a:hover {
 
 .home .logo {
     display: block;
-    width: 35%;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
+
 }
 
 .home .logo span {
@@ -187,8 +289,9 @@ header .nav-bar ul li a:hover {
 
 .home .logo img {
     display: block;
-    width: 50%;
-    margin: 0 auto
+    width: 30%;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .home .intro {
@@ -201,7 +304,7 @@ header .nav-bar ul li a:hover {
 
 .home .get-started {
     text-align: center;
-    padding: 20px 0px 80px 0px;
+    padding: 20px 0px 50px 0px;
 }
 
 .home .get-started button {
@@ -224,11 +327,16 @@ header .nav-bar ul li a:hover {
     border: 1px solid var(--white);
 }
 
-.event, .why, .benefits, .future-events, .code-of-conduct {
+.event,
+.why,
+.benefits,
+.future-events,
+.code-of-conduct {
     background: var(--darker-blue);
     width: 100%;
     padding: 10px 15%;
     position: relative;
+    text-align: center;
 }
 
 .event .background {
@@ -244,7 +352,7 @@ header .nav-bar ul li a:hover {
     width: 100%;
 }
 
-.event > .title {
+.event>.title {
     display: block;
     width: 60%;
     padding-top: 25px;
@@ -254,13 +362,13 @@ header .nav-bar ul li a:hover {
     left: 20%;
 }
 
-.event > .title h1 {
+.event>.title h1 {
     font-size: 70px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.event > .title p {
+.event>.title p {
     color: var(--dark);
     font-size: 25px;
     font-weight: 700;
@@ -270,7 +378,11 @@ header .nav-bar ul li a:hover {
     text-align: center;
 }
 
-.event .content .title, .why > .title h1, .benefits > .title h1, .future-events > .title h1, .code-of-conduct > .title h1 {
+.event .content .title,
+.why>.title h1,
+.benefits>.title h1,
+.future-events>.title h1,
+.code-of-conduct>.title h1 {
     font-size: 50px;
     font-weight: 700;
     text-transform: uppercase;
@@ -279,7 +391,10 @@ header .nav-bar ul li a:hover {
     margin-top: 70px;
 }
 
-.event .content > p, .why .title p, .benefits > .title p, .future-events > .title p {
+.event .content>p,
+.why .title p,
+.benefits>.title p,
+.future-events>.title p {
     width: 100%;
     text-align: center;
     font-size: 24px;
@@ -367,7 +482,6 @@ header .nav-bar ul li a:hover {
     background: var(--light);
     color: var(--dark);
     border-radius: 2px;
-    height: 180px;
     padding: 25px;
     text-align: center;
     cursor: grab;
@@ -389,7 +503,7 @@ header .nav-bar ul li a:hover {
     width: 42%;
     float: left;
     border-radius: 3px;
-    margin: 0 4%;
+    margin: 0px 4%;
     padding: 15px;
     text-align: center;
     padding-top: 25px;
@@ -431,9 +545,9 @@ header .nav-bar ul li a:hover {
     text-decoration: underline;
 }
 
-.code-of-conduct > .title p {
+.code-of-conduct>.title p {
     width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 16px;
     margin-bottom: 50px;
 }
@@ -458,7 +572,7 @@ header .nav-bar ul li a:hover {
     background: var(--light);
     color: var(--dark);
     border-radius: 2px;
-    padding: 20px 60px;
+    padding: 20px;
     text-align: center;
     cursor: grab;
 }
@@ -509,9 +623,9 @@ header .nav-bar ul li a:hover {
     background: var(--black);
 }
 
-.code-of-conduct .content > p {
+.code-of-conduct .content>p {
     width: 100%;
-    text-align: center;
+    text-align: justify;
     font-size: 16px;
     margin: 50px 0;
 }
@@ -573,7 +687,605 @@ footer p {
     color: var(--darker-blue)
 }
 
-footer p .year, footer.footer p i.fa {
+footer p .year,
+footer.footer p i.fa {
     color: var(--dark-blue);
     font-weight: 700;
+}
+
+.not-found {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 0 50px 0
+}
+
+.not-found .background {
+    display: inline-block;
+    width: 40%;
+    min-width: 200px;
+    max-width: 500px;
+    padding-top: 40px;
+}
+
+.not-found .content h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+
+.not-found .content a {
+    display: inline-block;
+    padding: 18px 35px;
+    background: #191D2D;
+    border-radius: 40px;
+    transition: all 250ms ease;
+}
+
+.not-found .content a:hover {
+    background: #E0E0E0
+}
+
+@media (min-width: 1500px) {
+
+    .home {
+        padding-top: 350px;
+        padding-bottom: 170px;
+    }
+
+    .home .logo span {
+        font-size: 60px;
+    }
+
+    .home .intro p {
+        font-size: 30px;
+    }
+
+    .home .get-started button {
+        padding: 20px 50px;
+        font-size: 20px;
+        border-radius: 40px
+    }
+
+    .event>.title p {
+        font-size: 35px;
+    }
+
+    .event .content .title,
+    .why>.title h1,
+    .benefits>.title h1,
+    .future-events>.title h1,
+    .code-of-conduct>.title h1 {
+        font-size: 60px;
+    }
+
+    .event .content>p,
+    .why .title p,
+    .benefits>.title p,
+    .future-events>.title p {
+        font-size: 30px;
+
+    }
+
+    .event .content .learn:last-child {
+        width: 84%;
+    }
+
+
+    .event .content .learn h1 {
+        font-size: 35px;
+    }
+
+    .event .content .learn p {
+        font-size: 25px;
+    }
+
+
+    .why .reasons .reason {
+        height: 250px;
+    }
+
+    .why .reasons .reason h3 {
+        font-size: 30px;
+    }
+
+    .why .reasons .reason p {
+        font-size: 24px;
+
+    }
+
+    .benefits .items .item {
+        margin: 0px 0%;
+    }
+
+    .benefits .items .item:first-child {
+        margin-right: 0%;
+
+    }
+
+    .benefits .items .item:last-child {
+        margin-left: 0%;
+    }
+
+    .benefits .items .item .content a {
+        display: block;
+        padding-top: 40px;
+        font-size: 30px;
+    }
+
+    .benefits .items .item .content p {
+        margin-top: 25px;
+        font-size: 20px
+    }
+
+    .code-of-conduct>.title p {
+        font-size: 26px;
+    }
+
+    .code-of-conduct .content .title h2 {
+        font-size: 40px;
+    }
+
+    .code-of-conduct .content .title p {
+        font-size: 30px;
+
+    }
+
+    .code-of-conduct .code {
+        width: 80%;
+        margin: 0 auto
+    }
+
+    .code-of-conduct .code h4 {
+        font-size: 30px;
+    }
+
+    .code-of-conduct .code p {
+        font-size: 25px;
+    }
+
+    .code-of-conduct .content>p {
+        width: 80%;
+        font-size: 26px;
+        margin: 50px auto;
+    }
+
+    footer p {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .home {
+        padding-bottom: 80px;
+    }
+
+    .home .logo span {
+        font-size: 30px;
+    }
+
+    .home .intro p {
+        font-size: 15px;
+    }
+
+    .home .get-started {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .home .get-started button {
+        padding: 10px 30px;
+        font-size: 13px;
+        border-radius: 20px;
+    }
+
+    .event .background {
+        height: 250px;
+    }
+
+    .event>.title h1 {
+        font-size: 30px;
+    }
+
+    .event>.title {
+        top: 150px;
+    }
+
+    .event>.title p {
+        font-size: 20px;
+    }
+
+    .event .content .title,
+    .why>.title h1,
+    .benefits>.title h1,
+    .future-events>.title h1,
+    .code-of-conduct>.title h1 {
+        font-size: 35px;
+    }
+
+    .code-of-conduct>.title p {
+        font-size: 14px;
+    }
+
+    .event .content .learn h1 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .event .content .learn p {
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .event .content .learn,
+    .event .content .learn:last-child {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .benefits .items .item .icon {
+        width: 15%;
+    }
+
+    .benefits .items .item {
+        width: 100%;
+        float: none;
+        padding: 25px 30px;
+        margin: 0px 0%;
+        margin-bottom: 25px;
+    }
+
+    .benefits .items .item .icon {
+        display: inline-block;
+        float: none;
+    }
+
+    .benefits .items .item:first-child {
+        margin-right: 0%;
+    }
+
+    .benefits .items .item:last-child {
+        margin-left: 0%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    header {
+        height: 40px;
+
+    }
+
+    header .logo a {
+        display: none;
+    }
+
+    header .logo {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        float: none;
+        padding: 5px;
+    }
+
+    header .logo img {
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    header .nav-bar {
+        top: -100vh;
+        opacity: 0;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        background: var(--darker-blue);
+        position: absolute;
+        left: 0;
+        text-align: center;
+        z-index: -5;
+    }
+
+    header .nav-bar.open {
+        animation: open-nav-bar 450ms ease forwards running
+    }
+
+    @keyframes open-nav-bar {
+        0% {
+            top: -100vh;
+            opacity: 0;
+        }
+
+        100% {
+            top: 0vh;
+            opacity: 1;
+        }
+    }
+
+    header .nav-bar.close {
+        animation: close-nav-bar 450ms ease forwards running
+    }
+
+    @keyframes close-nav-bar {
+        0% {
+            top: 0vh;
+            opacity: 1;
+        }
+
+        100% {
+            top: -100vh;
+            opacity: 0;
+        }
+    }
+
+    header .nav-bar ul {
+        padding-top: 80px
+    }
+
+    header .nav-bar ul li {
+        display: block;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    header .nav-bar ul li a {
+        font-size: 30px;
+    }
+
+    .mobile-bar {
+        position: fixed;
+        top: 0px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff00;
+        z-index: 9;
+        display: block;
+    }
+
+    .mobile-bar.open {
+        background-color: var(--white);
+        animation: open-mobile-bar 250ms ease forwards running
+    }
+
+    @keyframes open-mobile-bar {
+        0% {
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
+        }
+
+        100% {
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .mobile-bar.close {
+        background-color: var(--text-color);
+        animation: close-mobile-bar 250ms ease forwards running
+    }
+
+    @keyframes close-mobile-bar {
+        0% {
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+        }
+
+        100% {
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    .mobile-bar .menu-button {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 8px;
+        right: 12px;
+        cursor: pointer;
+        overflow: hidden;
+
+    }
+
+    .mobile-bar .menu-button span {
+        display: block;
+        width: 24px;
+        height: 4px;
+        background: var(--light);
+        margin: 3px 0;
+        border-radius: 3px;
+    }
+
+    .mobile-bar .menu-button.close span {
+        animation: close-middle-bar 250ms ease forwards;
+    }
+
+    @keyframes close-middle-bar {
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .mobile-bar .menu-button.close span:first-child {
+        opacity: 1;
+        animation: close-top-bar 250ms ease forwards;
+    }
+
+    @keyframes close-top-bar {
+        100% {
+            transform: rotate(45deg) translateX(5px) translateY(5px);
+        }
+    }
+
+    .mobile-bar .menu-button.close span:last-child {
+        opacity: 1;
+        animation: close-bottom-bar 250ms ease forwards;
+    }
+
+    @keyframes close-bottom-bar {
+        100% {
+            transform: rotate(-45deg) translateX(5px) translateY(-5px);
+        }
+    }
+
+
+    .mobile-bar .menu-button.open span {
+        animation: open-middle-bar 250ms ease forwards running;
+    }
+
+    @keyframes open-middle-bar {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .mobile-bar .menu-button.open span:first-child {
+        opacity: 1;
+        animation: open-top-bar 250ms ease forwards running;
+    }
+
+    @keyframes open-top-bar {
+        0% {
+            transform: rotate(45deg) translateX(5px) translateY(5px);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(0px) translateY(0px);
+        }
+    }
+
+    .mobile-bar .menu-button.open span:last-child {
+        opacity: 1;
+        animation: open-bottom-bar 250ms ease forwards running;
+    }
+
+    @keyframes open-bottom-bar {
+        0% {
+            transform: rotate(-45deg) translateX(5px) translateY(-5px);
+        }
+
+        100% {
+            transform: rotate(0deg) translateX(0px) translateY(0px);
+        }
+    }
+
+    .home {
+        padding-bottom: 80px;
+    }
+
+
+    .home .logo span {
+        font-size: 30px;
+    }
+
+    .home .intro p {
+        font-size: 15px;
+    }
+
+    .home .get-started {
+        padding: 20px 0px 0px 0px;
+    }
+
+    .home .get-started button {
+        padding: 10px 30px;
+        font-size: 13px;
+        border-radius: 20px;
+    }
+
+    .event .background {
+        height: 250px;
+    }
+
+    .event>.title h1 {
+        font-size: 30px;
+    }
+
+    .event>.title {
+        top: 130px;
+    }
+
+    .event>.title p {
+        font-size: 20px;
+        color: var(--text-color);
+    }
+
+    .event,
+    .why,
+    .benefits,
+    .future-events,
+    .code-of-conduct {
+        background: var(--darker-blue);
+        width: 100%;
+        padding: 20px 10%;
+    }
+
+    .event .content .title,
+    .why>.title h1,
+    .benefits>.title h1,
+    .future-events>.title h1,
+    .code-of-conduct>.title h1 {
+        font-size: 35px;
+    }
+
+    .code-of-conduct>.title p {
+        font-size: 14px;
+
+    }
+
+    .code-of-conduct .code {
+        padding: 20px;
+    }
+
+    .event .content .learn h1 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .event .content .learn p {
+        font-size: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .event .content .learn,
+    .event .content .learn:last-child {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .benefits .items .item .icon {
+        width: 15%;
+    }
+
+    .benefits .items .item {
+        width: 100%;
+        float: none;
+        padding: 25px 30px;
+        margin-bottom: 25px;
+        margin: 20px 0%;
+    }
+
+    .benefits .items .item:first-child {
+        margin-right: 0%;
+    }
+
+    .benefits .items .item:last-child {
+        margin-left: 0%;
+    }
+
+    .benefits .items .item .icon {
+        display: inline-block;
+        float: none;
+    }
+
 }

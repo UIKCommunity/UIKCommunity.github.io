@@ -501,12 +501,12 @@ header .nav-bar ul li a:hover {
     color: var(--dark);
 }
 
+
 .benefits .items .item {
     background: var(--light);
-    width: 42%;
+    width: 48%;
     float: left;
     border-radius: 3px;
-    margin: 0px 4%;
     padding: 15px;
     text-align: center;
     padding-top: 25px;
@@ -516,7 +516,7 @@ header .nav-bar ul li a:hover {
     margin-right: 2%;
 }
 
-.benefits .items .item:last-child {
+.benefits .items .item:nth-child(2) {
     margin-left: 2%;
 }
 
@@ -788,7 +788,7 @@ footer.footer p i.fa {
 
 
     .why .reasons .reason {
-        height: 250px;
+        height: 290px;
     }
 
     .why .reasons .reason h3 {
@@ -797,16 +797,6 @@ footer.footer p i.fa {
 
     .why .reasons .reason p {
         font-size: 24px;
-
-    }
-
-    .benefits .items .item {
-        margin: 0px 0%;
-    }
-
-    .benefits .items .item:first-child {
-        margin-right: 0%;
-
     }
 
     .benefits .items .item:last-child {
@@ -948,10 +938,14 @@ footer.footer p i.fa {
 
     .benefits .items .item:first-child {
         margin-right: 0%;
+        margin-left: 0%;
+        width: 100%;
     }
 
-    .benefits .items .item:last-child {
+    .benefits .items .item:nth-child(2) {
         margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
     }
 
 }
@@ -960,7 +954,6 @@ footer.footer p i.fa {
 
     header {
         height: 40px;
-
     }
 
     header .logo a {

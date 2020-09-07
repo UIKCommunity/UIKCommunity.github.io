@@ -20,7 +20,6 @@
 
             $(selector).addClass("active")
 
-            console.log("clicked");
         });
     }
     _scroll_to(".nav-bar a.home_link", "#home")
